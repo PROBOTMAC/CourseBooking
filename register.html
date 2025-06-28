@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <h1 style="color: rgb(98, 107, 107);">Siva's TopStar Courses</h1>
+
+        <style>
+            body{
+                background-color: black;
+                text-align: center;
+            }
+            form{
+                margin: auto;
+                padding: 20px;
+                width: 400px;
+                background-color: white;
+            }
+            input,select,button{
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+            button{
+                background-color: greenyellow;
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer;
+            }
+            button:hover{background-color: green;}
+        </style>
+</head>
+<body>
+    <form action="http://localhost:8080/course/register" method="post">
+
+        <label for="name">Enter Your Name :</label><br>
+        <input name = "name" type="text"><br><br>
+
+        <label for="emailId">Enter Your Eamil :</label><br>
+        <input name = "emailId" type="email"><br><br>
+
+        <label for="courseId">Select Your Course :</label><br>
+        <select id="course" name = "courseId">
+            <option value = "100">BLOCK CHAIN</option>
+            <option value = "101">FULL STACK WITH JAVA</option>
+            <option value = "102">PYTHON</option>
+            <option value = "103">PYTHON MACHINE LEARNING</option>
+        </select><br><br>
+        <button type="submit">SUBMIT</button>

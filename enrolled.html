@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Enrolled Students Details</title>
+        <script type = "text/javascript" src="myscript.js"></script>
+
+        <style>
+            body{
+                padding: 50px;
+
+            }
+            td{
+                background-color: aliceblue;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <table align="center" border="3" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width = 100>Student ID</th>
+                <th width = 180>Name</th>
+                <th width = 100>Email Id</th>
+                <th width = 150>Course ID</th>
+            </tr>
+            <tbody id = "courseTable" align="center"></tbody>     
+        </table>
+
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showStudents();
+            };
+
+        </script>
+    </body>
+</html>
